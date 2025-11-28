@@ -21,7 +21,7 @@ I detta moment ska ni få lära er om Arduinos två basfunktioner och skapa en f
 ### void Setup
 Vid start eller reset av programmet körs denna kod
 
-```
+```c
 void setup() {
   // put your setup code here, to run once:
 
@@ -31,7 +31,7 @@ void setup() {
 
 ### void Loop
 Loop körs däremot om och om igen eller tills bestämt stopp. 
-```
+```c
 void loop() {
   // put your main code here, to run repeatedly:
 
@@ -62,7 +62,7 @@ Klart, lampan på din NodeMCU bör blinka.
 ***
 
 ## Enkelt blinkprogram exempel och förklaring 
-```
+```c
 /*
   ESP8266 Blink by Simon Peter
   Blink the blue LED on the ESP-01 module
