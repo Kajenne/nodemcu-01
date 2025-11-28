@@ -10,14 +10,15 @@ I detta moment ska ni få lära er om Arduinos två basfunktioner och skapa en f
   
   <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/9e7dcb24-fcd2-4d8f-8f7a-d65778631bc2" />
 
-* Tillgång till en NodeMCU som går att kopplas till datorn med en sladd 
+* Tillgång till en NodeMCU som går att kopplas till datorn med kompatibel sladd 
 
+<img width="225" height="225" alt="image" src="https://github.com/user-attachments/assets/6da8abd9-79b4-4b46-b6a0-6e5502f0c59a" />
 
 ***
 
 ## Två basfunktioner i Arduino 
 
-### Void Setup
+### void Setup
 Vid start eller reset av programmet körs denna kod
 
 ```
@@ -28,7 +29,7 @@ void setup() {
 ```
 
 
-### Void Loop
+### void Loop
 Loop körs däremot om och om igen eller tills bestämt stopp. 
 ```
 void loop() {
@@ -39,7 +40,7 @@ void loop() {
 ***
 
 ## Sätt upp ett blinkprogram i Arduino
-1. Börja med att gå till tools > Board > ESP8266 > Generic ESP8266 Module 
+1. Börja med att gå till tools > Board > ESP8266 > Version Generic ESP8266 Module 
 <img width="1227" height="1072" alt="image" src="https://github.com/user-attachments/assets/0597e894-f203-44bb-b5b3-dc4847cbb578" />
 
 2. Koppla in din NodeMCU till din dator, välj tools > port > Den port som tillhör din NodeMCU
@@ -60,7 +61,7 @@ Klart, lampan på din NodeMCU bör blinka.
 
 ***
 
-##Enkelt blinkprogram exempel och förklaring 
+## Enkelt blinkprogram exempel och förklaring 
 ```
 /*
   ESP8266 Blink by Simon Peter
@@ -88,4 +89,8 @@ void loop() {
 }
 ```
 * Notera att Arduinos basfunktioner är med i koden.
-* 
+* Pinmode i setupdelen talar om vilken pin som används som output 
+* Efter // följer kommentarer som talar om vad som sker 
+* High - Släcker lampan
+* Low - Tänder lampan
+  
